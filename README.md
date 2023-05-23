@@ -4,9 +4,9 @@ Ce projet est un jeu "Shoot Them Up" simple créé en utilisant la bibliothèque
 
 ## Description
 
-Le jeu consiste à contrôler un vaisseau spatial et à tirer sur des ennemis qui apparaissent à l'écran. Les ennemis ont des vitesses et des points de vie différents. Un système de score est en place, avec un score augmentant à chaque ennemi abattu.
+Le jeu consiste à contrôler un vaisseau spatial et à tirer sur des ennemis qui apparaissent à l'écran. Les ennemis ont des vitesses différents. Un système de score est en place, avec un score augmentant à chaque ennemi abattu.
 
-Des bonus de vie peuvent également apparaître de manière aléatoire, permettant au joueur de regagner des vies.
+Des bonus de vie ( carre bleu ) peuvent également apparaître de manière aléatoire, permettant au joueur de regagner des vies.
 
 ## Comment jouer
 
