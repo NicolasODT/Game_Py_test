@@ -16,7 +16,7 @@ nb_ennemis = 10
 
 # Couleurs
 BLANC = (255, 255, 255)
-NOIR = (0, 0, 0)
+NOIR = (50, 50, 50)
 ROUGE = (255, 0, 0)
 VERT = (0, 255, 0)
 
@@ -102,7 +102,6 @@ class Ennemi(pygame.sprite.Sprite):
         self.x_offset = random.randint(1, 3) * random.choice([-1, 1])
         self.target = target
         self.speed_factor = random.uniform(0.5, 1)
-        # Ajustez les valeurs en fonction du nombre de vies souhaité
         self.vies = random.randint(1, 4)
         self.color = self.get_color_from_vies(self.vies)
 
@@ -206,10 +205,9 @@ def main():
                     ennemis.remove(ennemi)
                     ennemis.append(Ennemi(vaisseau))
                     vies -= 1
-                    if not vaisseau.clignotement:  # Ajoutez cette ligne
-                        vaisseau.clignotement = True  # Ajoutez cette ligne
-                        vaisseau.clignotement_timer = time.time()  # Ajoutez cette ligne
-                        vaisseau.clignotement_start = time.time()
+                    if not vaisseau.clignotement: 
+                        vaisseau.clignotement = True  
+                        vaisseau.clignotement_timer = time.time()
 
                 if vaisseau.clignotement and time.time() - vaisseau.clignotement_start > 2:
                     vaisseau.clignotement = False
